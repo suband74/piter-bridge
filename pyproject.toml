@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "piter-bridge"
+version = "0.1.0"
+description = ""
+authors = ["subbotinav <subbotinav@cifra-k.ru>"]
+readme = "README.md"
+packages = [{include = "piter_bridge"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiofiles = "^23.1.0"
+loguru = "^0.6.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
